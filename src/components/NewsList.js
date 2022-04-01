@@ -15,7 +15,8 @@ function NewsList() {
         const getArticles = async () => {
         const response = await axios.get('v2/everything?q=news&apiKey=ac8165351ca14f20a473e28e7492c919'); 
         console.log(response)
-        setArticles(response.data.articles)
+        const data = await response.data
+        setArticles(data.articles)
         }
         getArticles()
     }, [])
