@@ -22,18 +22,23 @@ const NewsList = () => {
   return (
     <div>
         
-      {articles.map(article =>{
-            return(
-             <NewsItem 
-             title={article.title}
-             description={article.description}
-             url={article.url}
-             urlToImage={article.urlToImage}
+      {
+        articles.length !==0?
+        articles.map(article =>{
+          return(
+           <NewsItem 
+           title={article.title}
+           description={article.description}
+           url={article.url}
+           urlToImage={article.urlToImage}
 
 
-             />   
-            )
-      })}
+           />   
+          )
+    })
+    :
+    ''
+      }
     </div>
   )
 }
