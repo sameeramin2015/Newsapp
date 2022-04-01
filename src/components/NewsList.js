@@ -3,7 +3,7 @@ import axios from 'axios'
 import NewsItem from './NewsItem'
 
 
-const NewsList = () => {
+function NewsList() {
     const [articles, setArticles] = useState([])
 
   
