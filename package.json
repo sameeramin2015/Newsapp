@@ -2,7 +2,7 @@
   "name": "news-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://newsapi.org",
+  "proxy": "https://pro-api.coinmarketcap.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
