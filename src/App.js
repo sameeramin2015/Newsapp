@@ -5,13 +5,13 @@ function App() {
   const [getNews,setNews] =useState([])
   useEffect(()=>{
     const fetchItems = async()=>{
-      let res = await fetch('/v2/everything?q=tesla&from=2022-03-01&sortBy=publishedAt&apiKey=ac8165351ca14f20a473e28e7492c919')
+      let res = await fetch('https://newsapp-alpha-eight.vercel.app/v2/everything?q=tesla&from=2022-03-01&sortBy=publishedAt&apiKey=ac8165351ca14f20a473e28e7492c919')
       let data = await res.json()
-      setNews(data)
+      setNews(data.articles)
 
     }
     fetchItems()
-  })
+  },[])
   return (
     <div className="App">
      
