@@ -13,7 +13,7 @@ const NewsList = () => {
 
     useEffect (() => {
         const getArticles = async () => {
-        const response = await axios.get('/v2/everything?q=news&apiKey=ac8165351ca14f20a473e28e7492c919'); 
+        const response = await axios.get('/v2/everything?q=travel&apiKey=ac8165351ca14f20a473e28e7492c919'); 
         console.log(response)
         setArticles(response.data.articles)
         }
